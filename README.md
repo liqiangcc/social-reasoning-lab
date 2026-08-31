@@ -1,6 +1,6 @@
-# Social Reasoning Lab
+# 人际推理训练实验室
 
-一个用于训练**人际场景中的观察、解释、假设、回应、反馈与修正能力**的个人学习仓库。
+这是一个用于训练**人际场景中的观察、解释、假设、回应、反馈与修正能力**的个人学习仓库。
 
 本仓库的目标不是建立“识人术”“读心术”或操控他人的技巧库，而是训练在信息不完整的人际环境中：
 
@@ -21,7 +21,7 @@
 1. **事实 ≠ 解释 ≠ 意图**：对方说了什么、我怎么理解、对方真实想法必须分开。
 2. **不把第一反应当事实**：自动解释只是候选假设。
 3. **多假设并存**：证据不足时不锁死单一结论。
-4. **顺序揭示**：复盘和训练时尽量只使用当时已经知道的信息，避免后见之明。
+4. **按顺序揭示**：复盘和训练时尽量只使用当时已经知道的信息，避免后见之明。
 5. **反馈驱动更新**：新信息出现后允许提高、降低或推翻原判断。
 6. **保留错误判断**：不能用最终结果反向美化当时预测。
 7. **低风险回应优先**：在不确定时优先选择能继续获得信息、又不无谓升级冲突的回应。
@@ -32,64 +32,53 @@
 ## 核心训练链
 
 ```text
-Observed
-→ Interpretation
-→ Hypotheses
-→ Evidence
-→ Response
-→ Outcome
-→ Update
-→ Reusable Pattern
+观察
+→ 解释
+→ 假设
+→ 证据
+→ 回应
+→ 结果
+→ 更新
+→ 可复用模式
 ```
 
-其中：
+## 议题驱动
 
-- `Observed`：可直接观察到的言语、行为、时间、环境。
-- `Interpretation`：我当时赋予这些事实的意义。
-- `Hypotheses`：至少一个、通常多个可能解释。
-- `Evidence`：支持、反对、仍缺失的信息。
-- `Response`：在当时信息条件下选择的回应。
-- `Outcome`：后续实际反馈或事件。
-- `Update`：哪些判断被加强、削弱或推翻。
-- `Reusable Pattern`：经过多个案例验证后才可沉淀的可迁移模式。
-
-## Issue 驱动
-
-仓库采用 Issue 作为训练控制面，而不是把 Issue 当作事实真相数据库。
+仓库采用 GitHub 议题作为训练控制面，而不是把议题当作事实真相数据库。
 
 长期关系：
 
 ```text
-1 Case ↔ 1 Primary Case Issue
-1 Case ↔ N Analysis / Replay / Training Sessions
+1 个案例 ↔ 1 个主案例议题
+1 个案例 ↔ 多次分析 / 回放 / 训练会话
 
-1 Book ↔ 1 Primary Book Issue（正式开始阅读后）
-1 Book ↔ N Reading / Case Training Sessions
+1 本书 ↔ 1 个主书籍议题（正式开始阅读后）
+1 本书 ↔ 多次阅读 / 案例训练会话
 ```
 
-候选书籍可以先进入一个 Reading Backlog；正式开始某本书时再创建独立 Book Issue。
+候选书籍先进入长期阅读候选清单；正式开始某本书时再创建独立主书籍议题。
 
 ## 文档
 
-- `docs/boundaries.md` — 仓库边界、隐私与安全约束
-- `docs/case-model.md` — Case / Session / Pattern 的领域模型
-- `docs/issue-workflow.md` — Issue 驱动生命周期
-- `docs/reasoning-principles.md` — 人际推理训练原则
-- `docs/learning-sources.md` — 书籍、真实案例、模拟案例如何进入训练
+- `docs/边界.md` — 仓库职责、隐私与安全边界
+- `docs/案例模型.md` — 案例、会话、结果和模式的领域模型
+- `docs/议题工作流.md` — 议题驱动生命周期
+- `docs/推理原则.md` — 人际推理训练原则
+- `docs/学习来源.md` — 书籍、真实案例、模拟案例如何进入训练
 
 ## 当前阶段
 
-当前只建立机制，不批量录入案例，不急于建立 Pattern Library。
+当前先验证机制，不批量录入案例，也不急于建立庞大模式库。
 
-下一阶段应先用一个**去标识化的小型模拟 Case**跑通：
+下一阶段先用一本书和一个小型案例跑通：
 
 ```text
-Input
-→ Analysis
-→ Response
-→ New Input
-→ Update
-→ Retrospective
+输入
+→ 分析
+→ 回应
+→ 新输入
+→ 更新
+→ 复盘
 ```
 
-机制跑通后，再决定 Issue 模板、标签体系、Session artifact schema 和 Pattern promotion gate。
+机制跑通后，再决定议题模板、标签体系、会话产物格式和模式晋升门槛。
